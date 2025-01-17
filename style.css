@@ -11,12 +11,96 @@ html {
 body {
   margin: 0;
   font-family: "Kumbh Sans", sans-serif;
+  background-image: url(./images/bg-pattern-top.svg),
+    url(./images/bg-pattern-bottom.svg);
+  background-position: top right, bottom left;
+  background-color: hsl(185, 75%, 39%);
+}
+
+.name-age {
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin-bottom: 0;
+}
+
+.name-age,
+.stat-number {
+  color: hsl(229, 23%, 23%);
+}
+
+.age {
+  font-weight: 400;
+  margin-left: 0.25em;
+}
+
+.location {
+  margin: 0.5em 0 2em 0;
+}
+
+.age,
+.location,
+.stat-type {
+  color: hsl(227, 10%, 46%);
+}
+
+.stat-number {
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin-bottom: 0;
+}
+
+.stat-type {
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+  margin-top: 0.5em;
+}
+
+.card {
+  width: 90%;
+  margin: 5em auto 0 auto;
+  background-color: white;
+  text-align: center;
+  border-radius: 1em;
+}
+
+.banner {
+  background-image: url(./images/bg-pattern-card.svg);
+  padding: 5em 0;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+
+.avatar {
+  display: block;
+  margin: -3.4em auto auto auto;
+  border: 5px solid white;
+  border-radius: 100px;
+}
+
+.user-info {
+  border-bottom: 1px solid hsl(0, 0%, 80%);
+}
+
+.profile-stats {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1em 0;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: rgb(255, 255, 255);
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 3px black;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: rgb(223, 223, 223);
+}
+
+@media (min-width: 400px) {
+  .card {
+    max-width: 375px;
+    margin-top: 14em;
+  }
 }
